@@ -1,0 +1,82 @@
+2025-05-25 09:30:26,136 DEBUG cd frappe-bench && python3 -m venv env
+2025-05-25 09:30:29,183 DEBUG cd frappe-bench && /home/mukeshkumar/frape/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-05-25 09:30:30,810 DEBUG cd frappe-bench && /home/mukeshkumar/frape/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-05-25 09:30:31,556 LOG Getting frappe
+2025-05-25 09:30:31,556 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-05-25 09:30:50,889 LOG Installing frappe
+2025-05-25 09:30:50,890 DEBUG cd /home/mukeshkumar/frape/frappe-bench && /home/mukeshkumar/frape/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mukeshkumar/frape/frappe-bench/apps/frappe 
+2025-05-25 09:31:34,883 DEBUG cd /home/mukeshkumar/frape/frappe-bench/apps/frappe && yarn install --check-files
+2025-05-25 09:32:18,200 DEBUG cd frappe-bench && bench build
+2025-05-25 09:32:18,342 INFO /home/mukeshkumar/frape/env/bin/bench build
+2025-05-25 09:32:35,170 LOG setting up backups
+2025-05-25 09:32:35,189 LOG backups were set up
+2025-05-25 09:32:35,189 INFO Bench frappe-bench initialized
+2025-05-25 09:38:56,572 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local
+2025-05-25 09:41:32,919 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local
+2025-05-25 09:41:43,729 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local --force
+2025-05-25 09:42:00,224 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local --force
+2025-05-25 09:42:44,473 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local --force
+2025-05-25 09:47:55,651 INFO /home/mukeshkumar/frape/env/bin/bench new-site mukesh.local --force
+2025-05-25 09:51:42,071 INFO /home/mukeshkumar/frape/env/bin/bench use mukesh.com
+2025-05-25 09:52:12,710 INFO /home/mukeshkumar/frape/env/bin/bench use mukesh.local
+2025-05-25 09:52:29,328 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-25 09:52:29,603 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-25 09:52:29,668 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-25 09:52:29,675 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-25 09:52:29,678 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-25 11:28:25,421 INFO /home/mukeshkumar/frape/env/bin/bench new-app deom_app
+2025-05-25 11:28:25,427 LOG creating new app deom_app
+2025-05-25 11:29:54,549 LOG Installing deom_app
+2025-05-25 11:29:54,550 DEBUG cd /home/mukeshkumar/frape/frappe-bench && /home/mukeshkumar/frape/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mukeshkumar/frape/frappe-bench/apps/deom_app 
+2025-05-25 11:29:56,627 DEBUG bench build --app deom_app
+2025-05-25 11:29:56,767 INFO /home/mukeshkumar/frape/env/bin/bench build --app deom_app
+2025-05-25 11:30:38,227 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local install-app deom_app
+2025-05-25 12:00:01,770 INFO /home/mukeshkumar/frape/env/bin/bench --verbose --site all backup
+2025-05-25 12:58:06,693 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local make-doctype ContactForm --module deom_app --fields [{"fieldname":"full_name","label":"Full Name","fieldtype":"Data"}, {"fieldname":"email","label":"Email","fieldtype":"Data"}, {"fieldname":"message","label":"Message","fieldtype":"Text"}] --create-desk-record
+2025-05-25 13:25:59,471 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local migrate
+2025-05-25 13:27:07,684 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-25 13:27:07,965 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-25 13:27:08,011 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-25 13:27:08,040 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-25 13:27:08,040 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-25 13:28:02,636 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local migrate
+2025-05-26 10:32:32,308 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-26 10:32:32,513 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-26 10:32:32,524 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-26 10:32:32,527 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-26 10:32:32,540 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-26 11:43:41,862 INFO /home/mukeshkumar/frape/env/bin/bench new-doctype Feedback --module CustomApp --custom --fields [{"fieldname":"name","fieldtype":"Data","label":"Name"},{"fieldname":"email","fieldtype":"Data","label":"Email"},{"fieldname":"message","fieldtype":"Text","label":"Message"}]
+2025-05-26 11:54:15,939 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local migrate
+2025-05-26 11:56:07,046 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-26 11:56:07,198 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-26 11:56:07,210 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-26 11:56:07,239 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-26 11:56:07,263 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-26 12:00:01,229 INFO /home/mukeshkumar/frape/env/bin/bench --verbose --site all backup
+2025-05-26 15:28:33,306 INFO /home/mukeshkumar/frape/env/bin/bench version
+2025-05-26 15:52:12,310 INFO /home/mukeshkumar/frape/env/bin/bench new-app demo_app
+2025-05-26 15:52:12,318 LOG creating new app demo_app
+2025-05-26 15:53:19,179 LOG Installing demo_app
+2025-05-26 15:53:19,181 DEBUG cd /home/mukeshkumar/frape/frappe-bench && /home/mukeshkumar/frape/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mukeshkumar/frape/frappe-bench/apps/demo_app 
+2025-05-26 15:53:22,077 DEBUG bench build --app demo_app
+2025-05-26 15:53:22,234 INFO /home/mukeshkumar/frape/env/bin/bench build --app demo_app
+2025-05-26 15:54:47,046 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-26 15:54:47,328 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-26 15:54:47,344 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-26 15:54:47,388 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-26 15:54:47,423 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-26 15:59:36,075 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local install-app demo_app
+2025-05-26 16:02:24,187 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local set config developer_mode 1
+2025-05-26 16:03:21,482 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local set config developer_mode 1
+2025-05-26 16:53:42,844 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-26 16:53:43,027 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-26 16:53:43,033 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-26 16:53:43,069 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-26 16:53:43,074 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-26 16:57:37,496 INFO /home/mukeshkumar/frape/env/bin/bench --site mukesh.local set-admin-password Mukesh@7260
+2025-05-26 16:57:47,386 INFO /home/mukeshkumar/frape/env/bin/bench start
+2025-05-26 16:57:47,559 INFO /home/mukeshkumar/frape/env/bin/bench serve --port 8000
+2025-05-26 16:57:47,563 INFO /home/mukeshkumar/frape/env/bin/bench watch
+2025-05-26 16:57:47,587 INFO /home/mukeshkumar/frape/env/bin/bench schedule
+2025-05-26 16:57:47,610 INFO /home/mukeshkumar/frape/env/bin/bench worker
+2025-05-26 18:00:02,116 INFO /home/mukeshkumar/frape/env/bin/bench --verbose --site all backup

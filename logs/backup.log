@@ -1,0 +1,18 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_acb4b2a74f3b4a4c --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _acb4b2a74f3b4a4c | /usr/bin/gzip >> ./mukesh.local/private/backups/20250525_120002-mukesh_local-database.sql.gz
+
+Backup Summary for mukesh.local at 2025-05-25 12:00:02.761537
+Config  : /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250525_120002-mukesh_local-site_config_backup.json 127.0B
+Database: /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250525_120002-mukesh_local-database.sql.gz 226.3KiB
+Backup for Site mukesh.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_acb4b2a74f3b4a4c --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _acb4b2a74f3b4a4c | /usr/bin/gzip >> ./mukesh.local/private/backups/20250526_120001-mukesh_local-database.sql.gz
+
+Backup Summary for mukesh.local at 2025-05-26 12:00:01.813802
+Config  : /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250526_120001-mukesh_local-site_config_backup.json 127.0B
+Database: /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250526_120001-mukesh_local-database.sql.gz 229.3KiB
+Backup for Site mukesh.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_acb4b2a74f3b4a4c --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _acb4b2a74f3b4a4c | /usr/bin/gzip >> ./mukesh.local/private/backups/20250526_180002-mukesh_local-database.sql.gz
+
+Backup Summary for mukesh.local at 2025-05-26 18:00:02.705280
+Config  : /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250526_180002-mukesh_local-site_config_backup.json 149.0B
+Database: /home/mukeshkumar/frape/frappe-bench/sites/mukesh.local/private/backups/20250526_180002-mukesh_local-database.sql.gz 240.2KiB
+Backup for Site mukesh.local has been successfully completed

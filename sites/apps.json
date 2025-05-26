@@ -1,0 +1,31 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.0.0-dev"
+    },
+    "deom_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "73c808f92f35cb6d5951eb3d259e996afedf5383",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "demo_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "875b71b666540b502afbe16e873f2fc564e1e5de",
+            "branch": "n"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    }
+}
