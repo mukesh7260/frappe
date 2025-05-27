@@ -2697,3 +2697,7 @@ ALTER TABLE `tablappy` ADD COLUMN `laptop_price` int NOT NULL DEFAULT 0
 ALTER TABLE `tablappy` ADD COLUMN `laptop_model` varchar(140)
 2025-05-26 16:47:40,716 WARNING database DDL Query made to DB:
 ALTER TABLE `tablappy` MODIFY `laptop_price` int NOT NULL DEFAULT 0
+2025-05-27 09:49:07,743 WARNING database DDL Query made to DB:
+ALTER TABLE `tablappy` ADD COLUMN `email` varchar(140)
+2025-05-27 09:49:07,761 WARNING database DDL Query made to DB:
+ALTER TABLE `tablappy` MODIFY `laptop_price` int NOT NULL DEFAULT 0

@@ -1,0 +1,18 @@
+2025-05-27 11:50:04,771 INFO ipython === bench console session ===
+2025-05-27 11:50:04,771 INFO ipython frappe.get_all("Email Queue", fields=["name", "status", "recipient"])
+2025-05-27 11:50:04,771 INFO ipython frappe.get_all("Email Queue", fields=["name", "status", "recipient"])
+2025-05-27 11:50:04,771 INFO ipython frappe.sendmail(
+    recipients=["mk2648054@gmail.com"],
+    
+    subject="Test Email from Console",
+    message="If you received this, sendmail is working."
+)
+2025-05-27 11:50:04,772 INFO ipython frappe.sendmail(
+    recipients=["mk2648054@gmail.com"],    
+    subject="Test Email from Console",
+    message="If you received this, sendmail is working."
+)
+2025-05-27 11:50:04,772 INFO ipython frappe.get_doc("Email Queue", "o86n1hi5lu").status
+2025-05-27 11:50:04,772 INFO ipython frappe.get_doc("Email Queue", "lm27kgknaf").status
+2025-05-27 11:50:04,772 INFO ipython exit;
+2025-05-27 11:50:04,772 INFO ipython === session end ===
